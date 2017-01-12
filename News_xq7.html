@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>最新动态</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/page_style.css" />
+<link rel="shortcut icon" href="/favicon.ico">
+<SCRIPT language="javascript">
+
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+    try {
+
+        window.sidebar.addPanel(sTitle, sURL, "");
+
+    } catch (e) {
+
+        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+
+</SCRIPT>
+
+
+</head>
+
+
+<body>
+<!-- 欢迎条 -->
+	<div class="header_top">
+		<div class="banxin">
+			<p style=" float:left;">欢迎来到广州美欣装饰有限公司官网！</p>
+						<div style=" float:right;">
+				<a onClick="SetHome('网址')" href="javascript:void(0)" title="设为首页">设为首页</a>
+				<span>丨</span>
+				<a onClick="AddFavorite('网址','网站名称')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+			</div>
+
+		</div>
+	</div>
+<!-- logo -->
+	<div class="header_center">
+			<div class="banxin">
+				<div class="logo">
+					<h1>
+						<a href="http://www.gzmeixin.com/" title="广州美欣装饰工程有限公司">广州美欣装饰工程有限公司</a>
+					</h1>
+				</div>
+				<div class="contact">
+					<div style=" width:49px; height:49px; background:url(images/phone.jpg) no-repeat; position:absolute; left:0; top:0px;"></div>
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">24小时热线：</i><span style="color:#e40081; font-size:16px; margin-left:10px;">4000-033-652</span><br />
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">咨&nbsp;询&nbsp;热&nbsp;线：</i><span style="color:#e40081;font-size:16px;margin-left:14px;">13926162916</span>
+				</div>
+			</div>
+	</div>
+<!-- 导航 -->
+<div class="nav">
+	<ul style="width:980px; margin:0 auto;">
+		<li><a href="index.html">首页</a></li>
+		<li><a href="Aboutus.html">关于我们</a></li>
+		<li><a href="Case.html">案例中心</a></li>
+		<li><a href="Gooddesign.html">优秀设计</a></li>
+		<li><a href="Constructionteam.html">精英团队</a></li>
+		<li class="nav_red"><a href="News.html">最新动态</a></li>
+		<li><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+<!-- banner -->
+<a href="#" style="width:100%; height:293px;display:block;">
+<img src="images/News_xq.jpg" alt="最新动态" style=" margin:0 auto;"/>
+</a>
+
+<!-- 内容开始 -->
+
+<div class="about_cont">
+	<div class="about_cont_nav">
+		<ul>
+			<li style="font-size:14px;">您所在的位置></li><li><a href="index.html">首页</a>>></li>
+						<li><a href="News_xq7">最新动态</a></li>
+		</ul>
+	
+	</div>
+	<p style=" font-size:18px; height:40px; width:980px; text-align:center; line-height:40px; margin-top:10px;">装修项目猫腻多专家教您巧规避</p>
+	<div style="width:980px;height:40px; border:1px solid #CCC; border-left:none; border-right:none; text-align:center; line-height:40px;">
+		<span style=" width:14px; height:14px; display:inline-block; background:url(images/News_pic01.jpg) no-repeat; padding-top:-10px; margin-right:5px;"></span>时间 ：2015-6-27 16:29:46&nbsp;&nbsp; &nbsp; &nbsp;
+		<span style=" width:15px; height:14px; display:inline-block; background:url(images/News_pic02.jpg) no-repeat;padding-top:-10px; margin-right:5px;"></span>点击：12&nbsp;&nbsp; &nbsp; &nbsp;
+		<span style=" width:16px; height:14px; display:inline-block; background:url(images/News_pic03.jpg) no-repeat;padding-top:-10px; margin-right:5px;"></span>来源：广州美欣装饰
+		 
+	</div>
+	
+	<p style="width:980px; border-bottom:1px solid #CCC; padding-top:30px;padding-bottom:30px;">&nbsp;&nbsp; &nbsp; &nbsp;进入初夏时节，家装行业迎来旺季。连日来，有不少市民反映装修房子遇到的烦心事。为此，新浪家居特意为您支招，避开这些陷阱。
+
+装修陷阱<br />
+陷阱一：报低预算单，通过施工增项变相加价<br />
+专家支招：仔细查看装修项目是否全部纳入预算，签订合同时图纸跟预算要一致，必要时可在合同的预算清单中约定：“在设计方案微调的情况下，允许实际用料与预算 有5%的偏差，超过该范围拒绝付款。”<br />
+
+陷阱二：与材料商串通，抬高材料价格拿回扣<br />
+专家支招：有些家装设计师为拿回扣，以“方便客户而代购材料”的幌子，与经销商串通一气抬高价格。不要盲目相信设计师的推荐，最好将其推荐的材料型号、价格等记 录下来，到市场了解一下，做到心中有数。<br />
+
+陷阱三：隐蔽工程偷工减料，房主多付冤枉钱<br />
+专家支招：对于细节和隐蔽工程，业主在签订合同中要明确工艺处理要求，并现场监管。有条件的可聘请第三方监理，完工后请专业人士验收，莫让装修公司既当“裁判”又 当“运动员”。<br />
+
+陷阱四：草签装修合同，诸多承诺无法兑现<br />
+专家支招：签订正规合同文本，把装修工程质量验收标准写入合同，尽量细化装修的具体要求，明确装修工期。<br />
+
+陷阱五：制作假营业执照和资质，骗取定金<br />
+专家支招：业主选择家装公司时首先要看其是否有施工资质、营业执照、售后服务能力，其次，看其管理是否完善，施工队伍是否稳定。<br />
+
+陷阱六：见买主心切，把优等品调包成次品<br />
+专家支招：送货上门时，需及时开包验货，仔细检查送来的产品是否与选择的货品一致。让商家出具正规发票，在发票上注明优等品、合格品等字样，以便解决出现的质量 问题。<br />
+
+陷阱七：以“设计不收费”为诱饵，让消费者签单<br />
+专家支招：业主在装修设计阶段要坚持自己的要求，同时，一定要到建材市场看看，对材料有个基本认识。</p>
+</div>
+<div style="width:980px; margin:0 auto; margin-top:20px; height:30px;">
+<a href="#" style=" font-size:14px; color:#333; float:left;" class="zhaopinhover">上一篇：幼儿园装修设计-儿童游戏设施的注意点</a><a href="#" style="font-size:14px; color:#333; float:right;" class="zhaopinhover">下一篇：返回列表</a>
+</div>
+<!-- 底部导航 -->
+<div class="bottom_nav">
+		<ul>
+		<li><span class="bottom_nav_icon"></span><a href="index.html">网站首页</a></li>
+		<li><span class="bottom_nav_icon2"></span><a href="Aboutus.html">关于我们</a></li>
+		<li><span class="bottom_nav_icon3"></span><a href="Case.html">案例展示</a></li>
+		<li><span class="bottom_nav_icon4"></span><a href="javascript:void(0)">服务客户</a></li>
+		<li><span class="bottom_nav_icon5"></span><a href="News.html">新闻中心</a></li>
+		<li><span class="bottom_nav_icon6"></span><a href="Aboutus.html">业务流程</a></li>
+		<li><span class="bottom_nav_icon7"></span><a href="javascript:void(0)">免费资料</a></li>
+		<li><span class="bottom_nav_icon8"></span><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+
+</div>
+
+<!-- 底部 -->
+<div class="bottom">
+	<div class="bottom_lianxi">
+		<ul>
+			<li>广州美欣装饰设计有限公司版权所有    粤ICP备15095383号   </li>
+			<li>服务热线：4000-033-652</li>
+			<li>地址：广州越秀区东山口龟岗大街江岭南路6号</li>
+			<li>邮箱：gzmeixindesign@163.com网址：http://www.gzmeixin.com/ 粤ICP备15095383号 </li>
+		
+		</ul>
+	</div>
+</div>
+
+
+</body>
+</html>

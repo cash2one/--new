@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/page_style.css" />
+<link rel="shortcut icon" href="/favicon.ico">
+<SCRIPT language="javascript">
+
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+    try {
+
+        window.sidebar.addPanel(sTitle, sURL, "");
+
+    } catch (e) {
+
+        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+
+</SCRIPT>
+
+</head>
+
+
+<body>
+<!-- 欢迎条 -->
+	<div class="header_top">
+		<div class="banxin">
+			<p style=" float:left;">欢迎来到广州美欣装饰有限公司官网！</p>
+			<div style=" float:right;">
+				<a onClick="SetHome('网址')" href="javascript:void(0)" title="设为首页">设为首页</a>
+				<span>丨</span>
+				<a onClick="AddFavorite('网址','网站名称')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+			</div>
+		</div>
+	</div>
+<!-- logo -->
+	<div class="header_center">
+			<div class="banxin">
+				<div class="logo">
+					<h1>
+						<a href="http://www.gzmeixin.com/" title="广州美欣装饰工程有限公司">广州美欣装饰工程有限公司</a>
+					</h1>
+				</div>
+				<div class="contact">
+					<div style=" width:49px; height:49px; background:url(images/phone.jpg) no-repeat; position:absolute; left:0; top:0px;"></div>
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">24小时热线：</i><span style="color:#e40081; font-size:16px; margin-left:10px;">4000-033-652</span><br />
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">咨&nbsp;询&nbsp;热&nbsp;线：</i><span style="color:#e40081;font-size:16px;margin-left:14px;">13926162916</span>
+				</div>
+			</div>
+	</div>
+<!-- 导航 -->
+<div class="nav">
+	<ul style="width:980px; margin:0 auto;">
+		<li><a href="index.html">首页</a></li>
+		<li ><a href="Aboutus.html">关于我们</a></li>
+		<li class="nav_red"><a href="Case.html">案例中心</a></li>
+			<li><a href="Gooddesign.html">优秀设计</a></li>
+		<li><a href="Constructionteam.html">精英团队</a></li>
+		<li><a href="News.html">最新动态</a></li>
+		<li><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+<!-- banner -->
+<a href="#" style="width:100%; height:293px; background:#eef8f9; display:block;">
+<img src="images/casezhongxin.jpg" alt="案例中心" style=" margin:0 auto;"/>
+</a>
+<!-- 内容开始 -->
+<div class="about_cont">
+	<div class="about_cont_nav">
+		<ul>
+			<li style="font-size:14px;">您所在的位置></li><li><a href="index.html">首页</a>>></li>
+						<li><a href="Case.html">案例中心</a></li>
+		</ul>
+	
+	</div>
+	<div class="case">
+			<div class="khal_jggbox">
+				<a href="Case_xq_pysm.html">
+					<img src="images/20160114161505.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">番禺思梦幼儿园装修案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：2769平方
+							<br/>设计理念：以营造现代、时尚且适应幼儿心理感受的建筑形象为宗旨，创造出一个更适合幼儿生活、学习、成长的场所。
+						</span>
+					</div>
+				</a>
+				<a href="Case_xq_xb.html" style="margin:0 31px">
+					<img src="images/20160115150311.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">顺德星宝贝幼儿园装修案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：900平方
+							<br/>设计理念：本托儿所的建筑机构总框架和布局，结合幼儿教育环境设计理念，并与当地的实际情况相结合设计出具有安全性、实用性、
+教育性、审美性的空间。
+						</span>
+					</div>
+				</a>
+				<a href="Case_xq_jbb.html">
+					<img src="images/20160115113202.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">阳山金宝贝幼儿园装修案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：2934平方
+							<br/>设计理念：使用冷暖对比颜色，丰富了整个空间环境的层次感，打破了之前沉闷氛围 ，给整 个建筑带来了鲜活、自然的气息。也使其建筑贴合与周边环境，完美贴合。
+						</span>
+					</div>
+				</a>
+			</div>
+			<div class="khal_jggbox">
+				<a href="Case_xq_jszzbz.html">
+					<img src="images/jsz_dtxgt.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">金沙洲知不足幼儿园装修案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：2934平方
+							<br/>设计理念：用“新、奇、趣、美”的装修个性风格引导儿童去观察、探索、创造、寻找快乐，从而使儿童得到情感的体验、智慧的启迪
+						</span>
+					</div>
+				</a>
+				<a href="Case_xq_yq.html" style="margin:0 31px">
+					<img src="images/yq_qtxgt.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">优启早教中心</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：850平方
+							<br/>设计理念：根据本托儿所的建筑机构总框架和布局，结合幼儿教育环境设计理念，并与当地的实际情况相结合设计出具有安全性、实用性、
+教育性、审美性的空间
+						</span>
+					</div>
+				</a>
+				<a href="Case_xq_htaq.html">
+					<img src="images/htaq05.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">小海豚安亲幼儿园案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：400平方
+							<br/>设计理念：本案围绕着此托管所的办学理念、教育文化打造了一个安全、利于幼儿学习及生活且富有趣味性的空间，从而更有利的配合 托管所的教学。
+						</span>
+					</div>
+				</a>
+			</div>
+			<div class="khal_jggbox">
+				<a href="Case_xq_jsz.html" style="margin:0 31px 0 0">
+					<img src="images/jsz07.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">肇庆高要金沙咀幼儿园案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：4000平方
+							<br/>设计理念：对设计对象的深度了解，同时结合早教面对的特殊群体--幼儿群体的特征，打造出一个无论是色彩、造型都极具针对性的方案，中庭以大自然为主题
+						</span>
+					</div>
+				</a>
+				<a href="Case_xq_hzsh.html">
+					<img src="images/hzsh04.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">海珠区穗华幼儿园案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：2255平方
+							<br/>设计理念：从广州古建筑特色，结合幼儿园的教育理念进行设计，让市民糅合了深厚的历史文化，提升企业形象魅力之余，还对幼儿园的文化产生交流与共鸣
+						</span>
+					</div>
+				</a>
+												<a href="Case_xq_tjyry.html" style=" margin-left:30px;">
+					<img src="images/tj01.jpg" width="304" height="208" alt=""/>
+					<p class="khal_anname">淘金幼儿园案例</p>
+					<div class="khal_hoverbox">
+						<span class="khal_hover_bg"></span>
+						<span class="khal_hover_text">项目类型：幼儿园装修设计
+							<br/>项目面积：500平方
+							<br/>设计理念：以魔方为概念，以颜色各异的小
+方块组成的六个面，一个简单的面可以变幻无穷，具像的魔方元素应用于空间，延伸魔方的变幻无穷。
+						</span>
+					</div>
+				</a>
+
+			</div>	</div>
+</div>
+
+<!-- 底部导航 -->
+<div class="bottom_nav">
+	<ul>
+		<li><span class="bottom_nav_icon"></span><a href="index.html">网站首页</a></li>
+		<li><span class="bottom_nav_icon2"></span><a href="Aboutus.html">关于我们</a></li>
+		<li><span class="bottom_nav_icon3"></span><a href="Case.html">案例展示</a></li>
+		<li><span class="bottom_nav_icon4"></span><a href="javascript:void(0)">服务客户</a></li>
+		<li><span class="bottom_nav_icon5"></span><a href="News.html">新闻中心</a></li>
+		<li><span class="bottom_nav_icon6"></span><a href="Aboutus.html">业务流程</a></li>
+		<li><span class="bottom_nav_icon7"></span><a href="javascript:void(0)">免费资料</a></li>
+		<li><span class="bottom_nav_icon8"></span><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+
+<!-- 底部 -->
+<div class="bottom">
+	<div class="bottom_lianxi">
+		<ul>
+			<li>广州美欣装饰设计有限公司版权所有    粤ICP备15095383号   </li>
+			<li>服务热线：4000-033-652</li>
+			<li>地址：广州越秀区东山口龟岗大街江岭南路6号</li>
+			<li>邮箱：gzmeixindesign@163.com网址：http://www.gzmeixin.com/ 粤ICP备15095383号 </li>
+		
+		</ul>
+	</div>
+</div>
+
+
+</body>
+</html>

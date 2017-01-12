@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/main.css" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+   var jq = jQuery.noConflict();
+</script>
+<script src="js/common_new.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/page_style.css" />
+<link rel="shortcut icon" href="/favicon.ico">
+<SCRIPT language="javascript">
+
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+    try {
+
+        window.sidebar.addPanel(sTitle, sURL, "");
+
+    } catch (e) {
+
+        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+
+</SCRIPT>
+
+</head>
+
+
+<body>
+<!-- 欢迎条 -->
+	<div class="header_top">
+		<div class="banxin">
+			<p style=" float:left;">欢迎来到广州美欣装饰有限公司官网！</p>
+			<div style=" float:right;">
+				<a onClick="SetHome('网址')" href="javascript:void(0)" title="设为首页">设为首页</a>
+				<span>丨</span>
+				<a onClick="AddFavorite('网址','网站名称')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+			</div>
+		</div>
+	</div>
+<!-- logo -->
+	<div class="header_center">
+			<div class="banxin">
+				<div class="logo">
+					<h1>
+						<a href="http://www.gzmeixin.com/" title="广州美欣装饰工程有限公司">广州美欣装饰工程有限公司</a>
+					</h1>
+				</div>
+				<div class="contact">
+					<div style=" width:49px; height:49px; background:url(images/phone.jpg) no-repeat; position:absolute; left:0; top:0px;"></div>
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">24小时热线：</i><span style="color:#e40081; font-size:16px; margin-left:10px;">4000-033-652</span><br />
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">咨&nbsp;询&nbsp;热&nbsp;线：</i><span style="color:#e40081;font-size:16px;margin-left:14px;">13926162916</span>
+				</div>
+			</div>
+	</div>
+<!-- 导航 -->
+<div class="nav">
+	<ul style="width:980px; margin:0 auto;">
+		<li><a href="index.html">首页</a></li>
+		<li><a href="Aboutus.html">关于我们</a></li>
+		<li><a href="Case.html">案例中心</a></li>
+			<li><a href="Gooddesign.html">优秀设计</a></li>
+		<li class="nav_red"><a href="Constructionteam.html">精英团队</a></li>
+		<li><a href="News.html">最新动态</a></li>
+		<li><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+<!-- banner -->
+<a href="#" style="width:100%; height:293px;display:block;">
+<img src="images/Constructionteam_banner.jpg" alt="设计团队" style=" margin:0 auto;"/>
+</a>
+<!-- 内容开始 -->
+<div class="about_cont">
+	<div class="about_cont_nav">
+		<ul>
+			<li style="font-size:14px;">您所在的位置></li><li><a href="index.html">首页</a>>></li>
+						<li><a href="Constructionteam_design_cqn.html">设计师简介</a></li>
+		</ul>
+	
+	</div>
+	<div class="about_cont_nav_tit">
+		<ul>
+			<li class="about_cont_nav_tit_on"  id="about_cont_nav_box1">设计团队</li>
+			<li id="about_cont_nav_box2">施工团队</li>
+			<li id="about_cont_nav_box3">设计简介</li>
+		</ul>
+	</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.about_cont_nav_tit li').click(function(e) {
+		$(this).addClass('about_cont_nav_tit_on').siblings('.about_cont_nav_tit li').removeClass('about_cont_nav_tit_on')
+	});
+	$('#about_cont_nav_box3').click(function(e) {
+		$(".sjln_box").css("display","block")
+		$(".shigong_team").css("display","none")
+		$(".shigongtuandui").css("display","none")
+		
+	});
+		$('#about_cont_nav_box2').click(function(e) {
+		$(".sjln_box").css("display","none")
+		$(".shigong_team").css("display","none")
+		$(".shigongtuandui").css("display","block")
+	});
+			$('#about_cont_nav_box1').click(function(e) {
+		$(".sjln_box").css("display","none")
+		$(".shigong_team").css("display","block")
+		$(".shigongtuandui").css("display","none")
+	});
+
+	
+});
+
+
+</script>
+
+</div>
+
+
+<div class="desginteam">
+	<div style=" margin-top:30px; position:absolute; left:0;top:0;">
+		<img src="images/lzb_1.jpg" width="245" height="267" alt="" />
+	</div>
+	<div class="desginteam_r">
+		<span>林志斌  Ben.ziv&nbsp;&nbsp;&nbsp;&nbsp;主任设计师</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>人气（<i style=" color:#ed7db1;">21</i>）</span><a style=" width:130px; height:40px; background:url(images/yuyue.jpg) no-repeat; position:absolute; left:233px;; top:0;z-index:100;" onclick="mfsjtc()" href="#"></a>
+	</div>
+	<ul class="desgin_cont">
+		<li>作品数量：<i style=" color:#ed7db1;">35</i></li>
+				<li>擅长风格：现代简约、新中式、后现代</li>
+
+		<li>从业时间：<i style=" color:#ed7db1;">三年~四年</i></li>
+
+		<li>毕业院校：广东工程学院</li>
+		<li>简介：</li><br />
+			设计理念：通过视觉艺术设计的统一来提升品牌文化与魅力，赋予专属灵魂的设计才是最好的设计。&nbsp;&nbsp;
+			毕业广东工程建筑设计专业&nbsp;&nbsp;
+			主要作品： PICAFE &nbsp;&nbsp;
+			祈福新村欧式样板房&nbsp;&nbsp;
+			越南餐吧&nbsp;&nbsp;
+			白云休闲书吧&nbsp;&nbsp;
+			珠江纺织城服装办公室&nbsp;&nbsp;
+			依稼茶饮&nbsp;&nbsp;
+			天河任性台式料理&nbsp;&nbsp;
+			佳学办公室&nbsp;&nbsp;
+			HOLE CULB建筑外观……
+
+	</ul>
+
+</div>
+<div class="desgin_anli">
+		代表作品
+</div>
+<div class="desgin_anli_pic">
+<ul>
+<li>
+<a href="Case_xq_jszzbz.html">
+<img src="images/jsz_dtxgt.jpg" alt="" width="270" height="199"/></a>
+<div class="desgin_anli_yy">
+	<p style="color:#FFF; margin-left:24px; font-size:14px; padding-top:5px;">知不足幼儿园</p>
+	<a href="#" onclick="mfsjtc()">预约设计</a><a href="Case_xq_jszzbz.html">查看详细</a>
+</div>
+</li>
+
+</ul>
+</div>
+<!-- 推荐设计师 -->
+<div class="desginer">
+	<ul>
+		<li>
+			<a href="Constructionteam_design_tqf.html">
+				<img src="images/tqf.jpg" width="172" height="186" alt=""/>
+				<span style=" display:block; width:172px; height:34px; border-bottom:1px solid #CCC; background:#3a3a3a; color:#FFF; text-align:center; line-height:34px;"><i style="font-size:14px;color:#FFF;">唐乔峰</i>&nbsp;&nbsp;&nbsp;&nbsp;首席设计师</span>	
+				<span style=" display:block; width:172px; height:58px; background:#3a3a3a;color:#FFF; text-align:center; padding-top:20px;">从业年限：<i style=" color:#ff08a1;">5年</i><br />为<i style=" color:#ff08a1;">45</i>户家庭设计过房子</span>
+				<a href="Constructionteam_design_tqf.html" style=" width:86px; height:32px; display:inline-block; background:#2abd4c; text-align:center; line-height:32px; color:#FFF;">查看案例</a><a href="#" onclick="mfsjtc()" style=" width:86px; height:32px; display:inline-block; background:#8a8a8a; text-align:center; line-height:32px; color:#FFF;">预约设计师</a>
+			</a>
+		</li>
+				<li>
+			<a href="Constructionteam_design_lsh.html">
+				<img src="images/lsh.jpg" width="172" height="186" alt=""/>
+				<span style=" display:block; width:172px; height:34px; border-bottom:1px solid #CCC; background:#3a3a3a; color:#FFF; text-align:center; line-height:34px;"><i style="font-size:14px;color:#FFF;">卢胜豪</i>&nbsp;&nbsp;&nbsp;&nbsp;设计师</span>	
+				<span style=" display:block; width:172px; height:58px; background:#3a3a3a;color:#FFF; text-align:center; padding-top:20px;">从业年限：<i style=" color:#ff08a1;">3年</i><br />为<i style=" color:#ff08a1;">15</i>户家庭设计过房子</span>
+				<a href="Constructionteam_design_lsh.html" style=" width:86px; height:32px; display:inline-block; background:#2abd4c; text-align:center; line-height:32px; color:#FFF;">查看案例</a><a href="#" onclick="mfsjtc()" style=" width:86px; height:32px; display:inline-block; background:#8a8a8a; text-align:center; line-height:32px; color:#FFF;">预约设计师</a>
+			</a>
+		</li>
+
+		<li>
+			<a href="Constructionteam_design_cqn.html">
+				<img src="images/cqn.jpg" width="172" height="186" alt=""/>
+				<span style=" display:block; width:172px; height:34px; border-bottom:1px solid #CCC; background:#3a3a3a; color:#FFF; text-align:center; line-height:34px;"><i style="font-size:14px;color:#FFF;">蔡秋妮</i>&nbsp;&nbsp;&nbsp;&nbsp;设计师</span>	
+				<span style=" display:block; width:172px; height:58px; background:#3a3a3a;color:#FFF; text-align:center; padding-top:20px;">从业年限：<i style=" color:#ff08a1;">3年</i><br />为<i style=" color:#ff08a1;">15</i>户家庭设计过房子</span>
+				<a href="Constructionteam_design_cqn.html" style=" width:86px; height:32px; display:inline-block; background:#2abd4c; text-align:center; line-height:32px; color:#FFF;">查看案例</a><a href="#" onclick="mfsjtc()" style=" width:86px; height:32px; display:inline-block; background:#8a8a8a; text-align:center; line-height:32px; color:#FFF;">预约设计师</a>
+			</a>
+		</li>
+
+	
+	</ul>
+
+</div>
+
+
+
+
+
+
+<!-- 底部导航 -->
+<div class="bottom_nav">
+		<ul>
+		<li><span class="bottom_nav_icon"></span><a href="index.html">网站首页</a></li>
+		<li><span class="bottom_nav_icon2"></span><a href="Aboutus.html">关于我们</a></li>
+		<li><span class="bottom_nav_icon3"></span><a href="Case.html">案例展示</a></li>
+		<li><span class="bottom_nav_icon4"></span><a href="javascript:void(0)">服务客户</a></li>
+		<li><span class="bottom_nav_icon5"></span><a href="News.html">新闻中心</a></li>
+		<li><span class="bottom_nav_icon6"></span><a href="Aboutus.html">业务流程</a></li>
+		<li><span class="bottom_nav_icon7"></span><a href="javascript:void(0)">免费资料</a></li>
+		<li><span class="bottom_nav_icon8"></span><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+
+</div>
+
+<!-- 底部 -->
+<div class="bottom">
+	<div class="bottom_lianxi">
+		<ul>
+			<li>广州美欣装饰设计有限公司版权所有    粤ICP备15095383号   </li>
+			<li>服务热线：4000-033-652</li>
+			<li>地址：广州越秀区东山口龟岗大街江岭南路6号</li>
+			<li>邮箱：gzmeixindesign@163.com网址：http://www.gzmeixin.com/ 粤ICP备15095383号 </li>
+		
+		</ul>
+	</div>
+</div>
+
+
+<div id="zxgs_tc">	
+   <div class="zxgs_yy_box" style="width:470px; height:234px; position:absolute; left:38%; top:36%; z-index:99999999;">
+		<div class="sec_topr_bd">
+			<div class="sec_topr_form index_form" style="padding:10px 20px 0 20px; height:234px;">
+				<span style="width:400px; font-size:18px; padding-bottom:10px; border-bottom:solid 1px #ddd; display:inline-block;">申请免费设计</span>
+				<a class="mfsj_tb" onclick="closetc()"></a>
+				<div class="form_line" style="margin-top:20px;">
+				<span style="font-size:18px; margin-left:38px;">您的称呼: </span>
+				<input type="text" name="yourname" value="" class="text outcontrol" style="border-color: rgb(221, 221, 221);">
+				</div>
+				<div class="form_line">
+					<label for="" class="label"></label>
+
+
+					<span style="font-size:18px; margin-left:38px;">您的电话: </span>
+					<input type="text" name="yourphone" value="" class="text outcontrol" style="border-color: rgb(221, 221, 221);">
+				</div>					
+
+				<input type="button" style="margin:0 0 20px 120px;" class="form_btn" onclick="javascript:checkFromLine2(this)" value="立即申请">
+			</div>
+		</div>
+	</div>
+	<div id="dialogBoxBG" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 2042px; z-index: 999999; opacity: 0.4; background-color: rgb(0, 0, 0);"></div>
+</div>
+<!-- 免费设计JS --> 
+<script>
+var mfsj = document.getElementById("zxgs_tc")
+function mfsjtc()
+{
+	mfsj.style.display="block"
+}
+
+function closetc()	
+{
+
+	mfsj.style.display="none"
+}
+</script>
+<script src="js/new_index.js" type="text/javascript"></script>
+
+</body>
+</html>

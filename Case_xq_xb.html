@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>优秀案例</title>
+<link rel="stylesheet" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<link rel="stylesheet" href="css/page_style.css" />
+<link rel="shortcut icon" href="/favicon.ico">
+<SCRIPT language="javascript">
+
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+    try {
+
+        window.sidebar.addPanel(sTitle, sURL, "");
+
+    } catch (e) {
+
+        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+
+</SCRIPT>
+
+</head>
+
+
+<body>
+<!-- 欢迎条 -->
+	<div class="header_top">
+		<div class="banxin">
+			<p style=" float:left;">欢迎来到广州美欣装饰有限公司官网！</p>
+			<div style=" float:right;">
+				<a onClick="SetHome('网址')" href="javascript:void(0)" title="设为首页">设为首页</a>
+				<span>丨</span>
+				<a onClick="AddFavorite('网址','网站名称')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+			</div>
+		</div>
+	</div>
+<!-- logo -->
+	<div class="header_center">
+			<div class="banxin">
+				<div class="logo">
+					<h1>
+						<a href="http://www.gzmeixin.com/" title="广州美欣装饰工程有限公司">广州美欣装饰工程有限公司</a>
+					</h1>
+				</div>
+				<div class="contact">
+					<div style=" width:49px; height:49px; background:url(images/phone.jpg) no-repeat; position:absolute; left:0; top:0px;"></div>
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">24小时热线：</i><span style="color:#e40081; font-size:16px; margin-left:10px;">4000-033-652</span><br />
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">咨&nbsp;询&nbsp;热&nbsp;线：</i><span style="color:#e40081;font-size:16px;margin-left:14px;">13926162916</span>
+				</div>
+			</div>
+	</div>
+<!-- 导航 -->
+<div class="nav">
+	<ul style="width:980px; margin:0 auto;">
+		<li><a href="index.html">首页</a></li>
+		<li ><a href="Aboutus.html">关于我们</a></li>
+		<li class="nav_red"><a href="Case.html">案例中心</a></li>
+			<li><a href="Gooddesign.html">优秀设计</a></li>
+		<li><a href="Constructionteam.html">精英团队</a></li>
+		<li><a href="News.html">最新动态</a></li>
+		<li><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+<!-- banner -->
+<a href="#" style="width:100%; height:293px; background:#eef8f9; display:block;">
+<img src="images/casezhongxin.jpg" alt="案例中心" style=" margin:0 auto;"/>
+</a>
+
+<!-- 内容开始 -->
+
+<div class="about_cont">
+	<div class="about_cont_nav">
+		<ul>
+			<li style="font-size:14px;">您所在的位置></li><li><a href="index.html">首页</a>>></li>
+			<li><a href="Case_xq_xb.html">优秀设计 -- 顺德星宝幼儿园</a></li>
+		</ul>
+	
+	</div>
+	
+
+
+
+
+
+	
+<div class="good_design">
+	<div class="good_design_top">
+		<span style=" color:#333333; font-size:14px; margin-left:30px;">设计师：</span><i style=" color:#666666">蔡秋妮</i>
+		<span style=" color:#333333; font-size:14px; margin-left:30px;">设计风格：</span><i style=" color:#666666">现代、时尚</i>
+		<span style=" color:#333333; font-size:14px; margin-left:30px;">项目面积：</span><i style=" color:#666666">2934平方米</i>
+	</div>
+	<div class="good_design_bom">
+		<span style=" color:#333333; font-size:14px; margin-left:30px; margin-top:20px; display:inline-block;">案例说明：</span><i style=" color:#666666">设计师将周边地域环境考虑其中，使用冷暖对比颜色，丰富了整个空间环境的层次感，打破了之前沉闷氛围 ，给整
+个建筑带来了鲜活、自然的气息。也使其建筑贴合与周边环境，完美贴合。</i>
+	</div>
+	
+
+
+
+
+
+
+</div>
+	<div class="case_xq_ad">
+		<a href="#"><img src="images/caseshow.jpg" width="980" height="128"  alt=""/></a>
+	</div>
+		<div class="case_xq_pic">
+		<ul>
+			<li>
+				<p>一层平面布置图</p>
+				<img src="images/sdxb_1fpmt.jpg" width="480" height="311"  alt=""/>
+			</li>
+			<li>
+				<p>二层平面布置图</p>
+				<img src="images/sdxb_2fpmt.jpg" width="480" height="311" alt="" />
+			</li>
+			<li>
+				<p>三层平面布置图</p>
+				<img src="images/sdxb_3fpmt.jpg" width="480" height="311" alt="" />
+			</li>
+			<li>
+				<p>四层平面布置图</p>
+				<img src="images/sdxb_4fpmt.jpg" width="480" height="311" alt="" />
+			</li>
+			<li>
+				<p>外观效果图</p>
+				<img src="images/sdxb_wg.jpg" width="480" height="311" alt="" />
+			</li>
+			<li>
+				<p>教室效果图</p>
+				<img src="images/sdxb_js.jpg" width="480" height="311"  alt=""/>
+			</li>
+			<li>
+				<p>音体室效果图</p>
+				<img src="images/sdxb_yts.jpg" width="480" height="311" alt="" />
+			</li>
+			<li>
+				<p>卫生间效果图</p>
+				<img src="images/sdxb_wc.jpg" width="480" height="311" alt="" />
+			</li>
+
+		</ul>
+	
+	</div>
+	<div class="case_xq_pic_xq">
+		<p>装修后现场图片</p>
+		<ul>
+			<li><img src="images/20160115150301.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150302.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150303.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150304.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150305.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150306.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150307.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150308.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150309.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150310.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150311.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150312.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150313.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150314.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150315.jpg" width="480" height="311" alt=""/></li>
+			<li><img src="images/20160115150316.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150317.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150318.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150319.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150320.jpg" width="480" height="311"  alt=""/></li>
+			<li><img src="images/20160115150321.jpg" width="480" height="311" alt="" /></li>
+			<li><img src="images/20160115150322.jpg" width="480" height="311"  alt=""/></li>			
+		</ul>
+	
+	</div>
+<!-- 
+	<div class="case_xq_pic_xq">
+		<p>幼儿园走廊</p>
+		<ul>
+			<li><img src="images/caseshow02.jpg" width="480" height="311" /></li>
+			<li><img src="images/caseshow02.jpg" width="480" height="311" /></li>
+			<li><img src="images/caseshow02.jpg" width="480" height="311" /></li>
+			
+		</ul>
+	
+	</div>
+ -->
+		<div class="case_xq_ad"><a href="#"><img src="images/caseshow.jpg" width="980" height="128"  alt="" /></a></div>
+
+
+</div>
+
+<div style="width:1040px; height:230px; margin:0 auto;">
+	<span style=""></span><i style=" font-size:16px; margin-left:24px;">推荐案例</i>
+		<ul class="mfjl_img">
+			<li class="mfjl_left"></li>
+			<li id="mfjl_middle">
+				<div id="hh" style="left: -394px;">
+					<div id="h1">
+					<div id="h1">
+					<a href="Case_xq_pysm.html"><img src="images/20160114161505.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_xb.html"><img src="images/20160115150311.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jbb.html"><img src="images/20160115113202.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/jsz_dtxgt.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/yq_qtxgt.jpg" width="185" height="185" alt=""></a>
+					</div>
+					<div id="h2">
+					<a href="Case_xq_pysm.html"><img src="images/20160114161505.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_xb.html"><img src="images/20160115150311.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jbb.html"><img src="images/20160115113202.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/jsz_dtxgt.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/yq_qtxgt.jpg" width="185" height="185" alt=""></a>
+					</div>
+					<div id="h3">
+					<a href="Case_xq_pysm.html"><img src="images/20160114161505.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_xb.html"><img src="images/20160115150311.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jbb.html"><img src="images/20160115113202.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/jsz_dtxgt.jpg" width="185" height="185" alt=""></a>
+					<a href="Case_xq_jszzbz.html"><img src="images/yq_qtxgt.jpg" width="185" height="185" alt=""></a>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="mfjl_right"></li>	
+		</ul>
+
+</div>	
+
+
+<script>
+var n=985;
+var lastClickTime = new Date().getTime();
+var delay = 600; // transition的延迟
+
+$(".mfjl_right").click(function(){
+  if (new Date().getTime() - lastClickTime < delay) {
+    return;
+  }
+  lastClickTime = new Date().getTime();
+
+	if(n>1580){
+		n+=197;
+		$("#hh").animate({left:-n},function(){
+			n=985;
+			$("#hh").css({left:-n})
+			}) 
+		}else{
+			n+=197;
+			$("#hh").animate({left:-n})
+			}	
+})
+
+$(".mfjl_left").click(function(){
+	
+  if (new Date().getTime() - lastClickTime < delay) {
+    return;
+  }
+  lastClickTime = new Date().getTime();
+	if(n<250){
+		n-=197;
+		$("#hh").animate({left:-n},function(){
+			n=985;
+			$("#hh").css({left:-n})
+			})
+		}else{
+	n-=197;
+	$("#hh").animate({left:-n})
+	return
+			}
+	})
+</script>
+
+
+<!-- 底部导航 -->
+<div class="bottom_nav">
+	<ul>
+		<li><span class="bottom_nav_icon"></span><a href="index.html">网站首页</a></li>
+		<li><span class="bottom_nav_icon2"></span><a href="Aboutus.html">关于我们</a></li>
+		<li><span class="bottom_nav_icon3"></span><a href="Case.html">案例展示</a></li>
+		<li><span class="bottom_nav_icon4"></span><a href="javascript:void(0)">服务客户</a></li>
+		<li><span class="bottom_nav_icon5"></span><a href="News.html">新闻中心</a></li>
+		<li><span class="bottom_nav_icon6"></span><a href="Aboutus.html">业务流程</a></li>
+		<li><span class="bottom_nav_icon7"></span><a href="javascript:void(0)">免费资料</a></li>
+		<li><span class="bottom_nav_icon8"></span><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+
+<!-- 底部 -->
+<div class="bottom">
+	<div class="bottom_lianxi">
+		<ul>
+			<li>广州美欣装饰设计有限公司版权所有    粤ICP备15095383号   </li>
+			<li>服务热线：4000-033-652</li>
+			<li>地址：广州越秀区东山口龟岗大街江岭南路6号</li>
+			<li>邮箱：gzmeixindesign@163.com网址：http://www.gzmeixin.com/ 粤ICP备15095383号 </li>
+		
+		</ul>
+	</div>
+</div>
+
+
+</body>
+</html>

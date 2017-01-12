@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/main.css" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/page_style.css" />
+<link rel="shortcut icon" href="/favicon.ico">
+<SCRIPT language="javascript">
+
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+    try {
+
+        window.sidebar.addPanel(sTitle, sURL, "");
+
+    } catch (e) {
+
+        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+
+</SCRIPT>
+
+</head>
+
+
+<body>
+<!-- 欢迎条 -->
+	<div class="header_top">
+		<div class="banxin">
+			<p style=" float:left;">欢迎来到广州美欣装饰有限公司官网！</p>
+			<div style=" float:right;">
+				<a onClick="SetHome('网址')" href="javascript:void(0)" title="设为首页">设为首页</a>
+				<span>丨</span>
+				<a onClick="AddFavorite('网址','网站名称')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+			</div>
+		</div>
+	</div>
+<!-- logo -->
+	<div class="header_center">
+			<div class="banxin">
+				<div class="logo">
+					<h1>
+						<a href="http://www.gzmeixin.com/" title="广州美欣装饰工程有限公司">广州美欣装饰工程有限公司</a>
+					</h1>
+				</div>
+				<div class="contact">
+					<div style=" width:49px; height:49px; background:url(images/phone.jpg) no-repeat; position:absolute; left:0; top:0px;"></div>
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">24小时热线：</i><span style="color:#e40081; font-size:16px; margin-left:10px;">4000-033-652</span><br />
+					<i style="display:inline-block;font-size:16px; margin-left:60px;">咨&nbsp;询&nbsp;热&nbsp;线：</i><span style="color:#e40081;font-size:16px;margin-left:14px;">13926162916</span>
+				</div>
+			</div>
+	</div>
+<!-- 导航 -->
+<div class="nav">
+	<ul style="width:980px; margin:0 auto;">
+		<li><a href="index.html">首页</a></li>
+		<li><a href="Aboutus.html">关于我们</a></li>
+		<li><a href="Case.html">案例中心</a></li>
+			<li><a href="Gooddesign.html">优秀设计</a></li>
+		<li class="nav_red"><a href="Constructionteam.html">精英团队</a></li>
+		<li><a href="News.html">最新动态</a></li>
+		<li><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+</div>
+<!-- banner -->
+<a href="#" style="width:100%; height:293px;display:block;">
+<img src="images/Constructionteam_banner.jpg" alt="设计团队" style=" margin:0 auto;"/>
+</a>
+<!-- 内容开始 -->
+<div class="about_cont">
+	<div class="about_cont_nav">
+		<ul>
+			<li style="font-size:14px;">您所在的位置></li>
+			<li><a href="index.html">首页</a>>></li>
+			<li><a href="Constructionteam.html">精英团队</a></li>
+		</ul>
+	
+	</div>
+	<div class="about_cont_nav_tit">
+		<ul>
+			<li class="about_cont_nav_tit_on"  id="about_cont_nav_box1">设计团队</li>
+			<li id="about_cont_nav_box2">施工团队</li>
+			<li id="about_cont_nav_box3">设计简介</li>
+		</ul>
+	</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.about_cont_nav_tit li').click(function(e) {
+		$(this).addClass('about_cont_nav_tit_on').siblings('.about_cont_nav_tit li').removeClass('about_cont_nav_tit_on')
+	});
+	$('#about_cont_nav_box3').click(function(e) {
+		$(".sjln_box").css("display","block")
+		$(".shigong_team").css("display","none")
+		$(".shigongtuandui").css("display","none")
+		
+	});
+		$('#about_cont_nav_box2').click(function(e) {
+		$(".sjln_box").css("display","none")
+		$(".shigong_team").css("display","none")
+		$(".shigongtuandui").css("display","block")
+	});
+			$('#about_cont_nav_box1').click(function(e) {
+		$(".sjln_box").css("display","none")
+		$(".shigong_team").css("display","block")
+		$(".shigongtuandui").css("display","none")
+	});
+
+	
+});
+
+
+</script>
+
+
+</div>
+
+
+</li>
+
+</ul>
+
+
+
+</div>
+</div>
+
+<div class="shigongtuandui">
+ 	<div class="shigongtuandui_bg">	</div>
+	<div style=" width:376px; height:273px; background:url(images/shigongtuandui1.jpg) no-repeat; float:left;"></div>
+	<div style=" width:376px; height:273px; background:url(images/shigongtuandui1.jpg) no-repeat; float:left; margin-left:20px;"></div>
+
+</div>
+
+
+
+
+
+
+
+
+<div  class="sjln_box" style=" width:100%; height:940px; background:url(images/shejilinian.jpg) no-repeat;">
+	<div class="design_ct">
+		<span>健康教育场所设计简介的建设和推广是美欣装饰长期涉足研发的工作重点。其目的是创建出有利身心健康的教育环境。依据自然和谐、人文关怀、
+安全低耗的设计简介为指导思想，对教育场所设计标准和评估进行了研究。研究从健康设计简介出发，以具体设计施工方案为切入点，针对行业实际情
+况，系统的提出了有关幼儿园设计所涉及的相关内容和重点。 </span>
+		<p>设计简介的诠释: 自然和谐、人文关怀、安全低耗</p>
+		<i>“自然一词有两个主要的含义：一是指的自然物的集合，二是指“本性”。</i>
+		<p>和谐</p>
+		<i>中国古人关于“和谐”的概念中，首先就是把“和”与“利”联系在一起。古人说，利为义之和。也就是说万物之间当然有利益冲突，只有消弭冲突，
+各自节制，不相争夺，才能达到和谐， 因此，“和谐”之“和”首先是调和、和解不同利益之“和”。</i>
+		<p>自然和谐</p>
+		<i>通过自然物特有的属性遵循自然界的规律和法则，调和室内人文与物件，精神与物体，空间与结构，色调与采光，等多方面的冲突已达到心灵感受上的
+安全舒适的健康教育环境。</i>
+		<p>人文</p>
+		<i>人类的文化轨迹，人类现状文化背景，和通过改创未来人类文化的发展方向。它包括(历史的，民族的，区域的，个体的，集体的，宗教的，信仰的等)。
+而我们在这里只研究人类在室内环境的人文学科。</i>
+		<p>关怀</p>
+		<i>关怀本是动词，但我们也经常用于形容词的范畴，如关怀式公装，它表示的是一种行为上的状态和程度，关怀代表着，服务，爱心，温馨、恬静、优雅、
+和谐、奋发向上。</i>
+		<p>人文关怀</p>
+		<i>一个蕴含人文关怀的教育环境，会给人一个温馨、恬静、优雅、和谐、奋发向上的精神空间，从这个意义上来说，人文关怀与其说是民族文化的积淀，
+不如说是时代对幼儿园室内设计的召唤。室内环境设计呼唤人文关怀！以人为本，关爱弱势人群，构筑无障碍生活。人文关怀设计倡导的是一种既与传
+统文脉相承、又结合现代功能与技术的要求与之相并进 。同时也记载了居住者在精神健康的文明程度的高低。</i>
+		<p>安全</p>
+		<i>从英文SAFETY安全的解释是这样：保险，安全设备，保险装备。安全性在人居生活中体现的是一种生活状态的保障，那么健康家居设计将通过安全设
+备，安全用料，安全施工，安全的设计手法，便于维护等多方面使得人在任何时间任何状态都处于相对的健康状态。</i>
+<p>低耗</p>
+		<i>所谓健康家居的低耗，即是我们通过设计手段追求消耗最小的能源，资源和环境付出，而获取较大的室内环境质量和服务。低耗同时也是住者一种能源
+的储备。材料的再生和回收性。</i>
+<p>安全低耗</p>
+		<i>通过安全性的设计手段，在长期的居住环境中避免出现安全隐患问题，并达到最小的消耗获取最大的能源储备。体现出健康家居生活保障。我们有义务
+在更多的设计中找到低耗的每一种可能，不放过每一种低耗材料的替代品。</i>
+	
+	</div>
+</div>
+
+
+
+	<div class="shigong_team">
+		 <ul>
+		 	<li>
+				<a href="Constructionteam_design_lzb.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">林志斌  Ben.ziv</p>
+				<span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				
+				</div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：4年</li><br />
+					<li style=" margin-right:200px;">作品：35个</li><br />
+					<li>简介：毕业广东工程建筑设计专业&nbsp;&nbsp;设计理念：通过视觉艺术设计的统一来提升品牌文化与魅力，赋予专属灵魂的设计才是最好的设计。
+					</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>林志斌  Ben.ziv</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：4年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1;    filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></span>
+				</div>
+				<img src="images/lzb.jpg" width="320" height="320" alt=""/>
+				</a>
+			</li>
+		 	<li>
+				<a href="Constructionteam_design_cqn.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">蔡秋妮</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span></div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：3年</li><br />
+					<li style=" margin-right:200px;">作品：12个</li><br />
+					<li>简介：毕业于南华工商学院室内设计专业
+						<br/>设计理念：设计是一种追求完美的生活态度，设计是一种追求品味的生活概念
+					</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>蔡秋妮</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：3年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1; filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;">
+				</span>
+				</div>
+				<img src="images/cqn.jpg" width="320" height="320" alt="蔡秋妮"/>
+				</a>
+			</li>
+		 	<li>
+				<a href="Constructionteam_design_lsh.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  -moz-opacity:0.6;   -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">卢胜豪</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span></div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：3年</li><br />
+					<li style=" margin-right:200px;">作品：15个</li><br />
+					<li>简介：作为室内设计师，室内设计工作职责主要还是为了提高室内空间的功能和居住质量再求达到美学的美观。引用美国劳工统计局的话来说，就是“实用、美观和有助于达到预期目的。
+						设计理念：设计因人而异,品质始终如一
+					</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>卢胜豪</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：3年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1;    filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></span>
+				</div>
+				<img src="images/lsh.jpg" width="320" height="320" alt=""/>
+				</a>
+			</li>
+		 	<li>
+				<a href="Constructionteam_design_tqf.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">唐乔峰</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span></div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：5年</li><br />
+					<li style=" margin-right:200px;">作品：45个</li><br />
+					<li>简介：毕业于北海艺术设计学院，自小学习并热爱艺术创作。&nbsp;设计理念：设计源于生活,科技回归人性,文化融入自然.“因设计而生活,为生活而设计”</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>唐乔峰</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：5年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1;    filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></span>
+				</div>
+				<img src="images/tqf.jpg" width="320" height="320" alt=""/>
+				</a>
+			</li>
+		 	<li>
+				<a href="Constructionteam_design_lk.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">黎凯</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span></div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：10年</li><br />
+					<li style=" margin-right:200px;">作品：5个</li><br />
+					<li>简介：你喜欢挑战，方法就越来越多</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>黎凯</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：10年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1;    filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></span>
+				</div>
+				<img src="images/lk.jpg" width="320" height="320" alt=""/>
+				</a>
+			</li>
+		 	<li>
+				<a href="Constructionteam_design_zh.html">
+				<div class="shigong_team_none">
+				<div style="background:#000; opacity:0.6; width:320px; height:320px; position:absolute; left:0; top:0;filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></div>
+				<div style=" width:280px; height:40px; border-bottom:1px #FFFFFF dashed; position:absolute; left:20px; top:55px; z-index:4; color:#FFF;"><p style=" margin-left:80px;">张辉</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span></div>
+				<ul style=" position:absolute; left:44px; top:170px; z-index:5; color:#FFF;">
+					<li>经验：5年</li><br />
+					<li style=" margin-right:200px;">作品：20个</li><br />
+					<li>简介：你喜欢挑战，方法就越来越多</li>
+				</ul>
+				</div>
+				<div class="shigong_team_block">
+				<div style=" position:absolute; left:54px; bottom:4px; z-index:2; color:#FFF;"><p>张辉</p><span style=" width:57px; line-height:20px; background:#f6ad02; display:inline-block; text-align:center; color:#FFF; border-radius:1px;">设计师</span>
+				<span style="">经验：5年</span>
+				</div>
+				<span style=" height:30px; width:320px;background:#000; opacity:0.6; position:absolute; bottom:0; left:0; z-index:1;    filter:alpha(opacity=60);  
+      -moz-opacity:0.6;  
+      -khtml-opacity: 0.6;  
+      opacity: 0.6;"></span>
+				</div>
+				<img src="images/zh.jpg" width="320" height="320" alt=""/>
+				</a>
+			</li>
+
+
+		 </ul>
+		
+	</div>
+</div>
+
+
+
+<!-- 底部导航 -->
+<div class="bottom_nav">
+		<ul>
+		<li><span class="bottom_nav_icon"></span><a href="index.html">网站首页</a></li>
+		<li><span class="bottom_nav_icon2"></span><a href="Aboutus.html">关于我们</a></li>
+		<li><span class="bottom_nav_icon3"></span><a href="Case.html">案例展示</a></li>
+		<li><span class="bottom_nav_icon4"></span><a href="javascript:void(0)">服务客户</a></li>
+		<li><span class="bottom_nav_icon5"></span><a href="News.html">新闻中心</a></li>
+		<li><span class="bottom_nav_icon6"></span><a href="Aboutus.html">业务流程</a></li>
+		<li><span class="bottom_nav_icon7"></span><a href="javascript:void(0)">免费资料</a></li>
+		<li><span class="bottom_nav_icon8"></span><a href="Contact.html">联系我们</a></li>
+	</ul>
+
+
+</div>
+
+<!-- 底部 -->
+<div class="bottom">
+	<div class="bottom_lianxi">
+		<ul>
+			<li>广州美欣装饰设计有限公司版权所有    粤ICP备15095383号   </li>
+			<li>服务热线：4000-033-652</li>
+			<li>地址：广州越秀区东山口龟岗大街江岭南路6号</li>
+			<li>邮箱：gzmeixindesign@163.com网址：http://www.gzmeixin.com/ 粤ICP备15095383号 </li>
+		
+		</ul>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* CSS Document */
+/*css鍒濆鍖� css reset*/
+body, div ,a ,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td { margin:0; padding:0; }
+body { font-size:12px; color:#3C3C3C; font-family:"Microsoft YaHei"; background:#fff; }
+img{ border:0; display:block;}
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%;/* 12px*/ }
+em,i{ font-style:normal; }
+input, button, select, textarea { outline:none; border:none; _border:0;} 
+textarea { resize:none;/*璁剧疆textarea涓嶅彲鏀瑰彉灏哄澶у皬*/ }
+a { color: #3C3C3C; text-decoration:none; }
+a:hover { color:#e40082; text-decoration:none; }
+.hot{ color:#f40!important;}
+.current{ width:100%; height:100%; background:url(/park/images/platform/title_bg_active.png) no-repeat;}
+.current01{ background:#9EDAF6;}
+.current02{ border: 1px solid #3CA0D7;}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
